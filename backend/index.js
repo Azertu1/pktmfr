@@ -1,38 +1,24 @@
 const express = require('express');
-const cors = require('cors');
-const si = require('systeminformation'); // 1. Importer la bibliothèque
+const si = require('systeminformation');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(express.json());
-
-// Route de test (Corrigé res.json au lieu de json)
-app.get('/api', (req, res) => {
-    res.json({ message: "Node.js fonctionne" });
-});
-
-// 2. Ajouter la route pour récupérer les métriques du serveur hôte
 app.get('/api/metrics', async (req, res) => {
     try {
-        const load = await si.currentLoad();
+        const cpu = await si.currentLoad();
         const mem = await si.mem();
+        const fs = await si.fsSize();
+        const net = await si.networkStats();
 
         res.json({
-            cpu: Math.round(load.currentLoad), // Pourcentage d'utilisation global du CPU
-            memory: {
-                total: mem.total,
-                used: mem.used,
-                percent: Math.round((mem.used / mem.total) * 100)
-            }
+            cpu: cpu.currentLoad,
+            memory: (mem.active / mem.total) * 100,
+            disk: fs[0] ? fs[0].use : 0,
+            network: net[0] ? (net[0].tx_sec + net[0].rx_sec) / 1024 / 1024 : 0 // Conversion en MB/s
         });
     } catch (error) {
-        console.error("Erreur lors de la récupération des métriques :", error);
-        res.status(500).json({ error: "Impossible de récupérer les métriques du serveur" });
+        res.status(500).json({ error: 'Erreur de lecture' });
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Serveur démarré sur le port ${PORT}`);
-});
+app.listen(3000, () => console.log('API prête sur le port 3000'));

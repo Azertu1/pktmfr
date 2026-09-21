@@ -7,6 +7,7 @@ services:
 
   pktm-backend:
     build: ./backend
+    pid: "host"
     restart: unless-stopped
     depends_on:
       - pktm-bdd
@@ -18,6 +19,7 @@ services:
       - HOST_PROC=/host/proc  # Indique à systeminformation où trouver le /proc hôte
     volumes:
       - /proc:/host/proc:ro  # Monte le /proc de la machine hôte en lecture seule
+      - /:/hostfs:ro # Permet de scanner l'usage du disque principal
 
   pktm-bdd:
     image: postgres:16-alpine # Légère et nativement compatible ARM64
