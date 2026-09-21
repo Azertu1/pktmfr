@@ -2,9 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guismo - Le Bordel Complet</title>
+    <style>
+        /* Base reset & epileptic background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            animation: strobeBackground 0.2s infinite;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: crosshair;
+        }
+
+        @keyframes strobeBackground {
+            0% { background-color: #ff0000; }
+            16% { background-color: #00ff00; }
+            33% { background-color: #0000ff; }
+            50% { background-color: #ffff00; }
+            66% { background-color: #ff00ff; }
+            83% { background-color: #00ffff; }
+            100% { background-color: #ffffff; }
+        }
+
+        /* Generic image styles */
+        img {
+            position: absolute;
+            user-select: none;
+            pointer-events: none; /* Prevents dragging the images */
+            will-change: transform, left, top;
+        }
+
+
+        /* 1. Spin Crazy */
+        .spin-crazy {
+            animation: spinFast 0.4s linear infinite;
+        }
+        @keyframes spinFast {
+            100% { transform: rotate(360deg) scale(1.5); }
+        }
+
+        /* 2. 3D Tumbler */
+        .spin-3d {
+            animation: spin3D 1s cubic-bezier(0.1, 0.7, 1.0, 0.1) infinite;
+        }
+        @keyframes spin3D {
+            0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+            100% { transform: rotateX(720deg) rotateY(360deg) rotateZ(180deg); }
+        }
+
+        /* 3. Violent Shake */
+        .shake-violent {
+            animation: shake 0.05s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(2px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(0px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(2px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(2px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        /* 4. Glitch Effect */
+        .glitch-effect {
+            animation: glitchEffect 0.2s infinite;
+            filter: drop-shadow(5px 0 0 rgba(255,0,0,1)) drop-shadow(-5px 0 0 rgba(0,255,255,1));
+        }
+        @keyframes glitchEffect {
+            0% { clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%); }
+            20% { clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%); }
+            40% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); }
+            60% { clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%); }
+            80% { clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%); }
+            100% { clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%); }
+        }
+
+        /* 5. Pulse and Scale */
+        .pulse-scale {
+            animation: pulseExtreme 0.3s alternate infinite;
+        }
+        @keyframes pulseExtreme {
+            0% { transform: scale(0.5); filter: blur(5px); }
+            100% { transform: scale(3); filter: blur(0px); }
+        }
+
+
+        /* Intense Filters */
+        .filter-hue { animation: hueRotate 1s linear infinite; }
+        @keyframes hueRotate { 100% { filter: hue-rotate(360deg); } }
+
+        .filter-invert { animation: invertFlash 0.1s infinite; }
+        @keyframes invertFlash { 0%, 49% { filter: invert(0); } 50%, 100% { filter: invert(1) contrast(300%); } }
+
+        /* Warning text just to add to the mess */
+        .warning-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            color: white;
+            mix-blend-mode: difference;
+            z-index: 9999;
+            pointer-events: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            animation: shake 0.1s infinite, hueRotate 2s linear infinite;
+        }
+    </style>
 </head>
 <body>
+
+<!-- Code exact demandé -->
 <audio src="enemitoloverstromayes.mp3" id="maMusique" loop></audio>
 <script>
     // On attend le premier clic de l'utilisateur sur la page
@@ -16,6 +134,174 @@
             console.log("Lecture bloquée :", error);
         });
     }, { once: true }); // "once: true" supprime l'écouteur après le premier clic
+</script>
+<!-- Fin du code exact demandé -->
+
+<div class="warning-text">BORDEL COMPLET</div>
+
+<script>
+    const IMG_SRC = 'guismo-boy.jpg';
+
+    // Arrays to hold special interactive images
+    const bouncers = [];
+    const trailers = [];
+    let explosions = [];
+
+    // Mouse tracking
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    // Helper to create an image with a random size and random classes
+    function spawnImage(x, y, w, h, classes = []) {
+        const img = document.createElement('img');
+        img.src = IMG_SRC;
+        // Fallback styling in case the image fails to load so it still creates a chaotic colored box
+        img.alt = 'guismo';
+        img.onerror = () => { img.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`; img.style.border = "5px solid black"; };
+
+        img.style.left = x + 'px';
+        img.style.top = y + 'px';
+        img.style.width = w + 'px';
+        img.style.height = h + 'px';
+        img.style.zIndex = Math.floor(Math.random() * 1000);
+
+        classes.forEach(c => img.classList.add(c));
+        document.body.appendChild(img);
+        return img;
+    }
+
+    // List of chaotic animation classes
+    const chaoticClasses = [
+        'spin-crazy',
+        'spin-3d',
+        'shake-violent',
+        'glitch-effect',
+        'pulse-scale',
+        'filter-hue',
+        'filter-invert'
+    ];
+
+    // 1. Spawn 50 Random Chaotic Images
+    for (let i = 0; i < 50; i++) {
+        const size = Math.random() * 150 + 50;
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+
+        // Pick 1 to 3 random classes
+        const numClasses = Math.floor(Math.random() * 3) + 1;
+        const activeClasses = [];
+        for(let j=0; j<numClasses; j++) {
+            activeClasses.push(chaoticClasses[Math.floor(Math.random() * chaoticClasses.length)]);
+        }
+
+        spawnImage(x, y, size, size, activeClasses);
+    }
+
+    // 2. Setup Mouse Trail Images
+    for (let i = 0; i < 15; i++) {
+        const size = 60 + i * 5;
+        const img = spawnImage(mouseX, mouseY, size, size, ['filter-hue']);
+        img.style.borderRadius = "50%"; // Just to make it weirder
+        trailers.push({
+            element: img,
+            x: mouseX,
+            y: mouseY,
+            delay: i * 0.05 // Different delay for the snake effect
+        });
+    }
+
+    // 3. Setup Bouncing (DVD Saver Style) Images
+    for (let i = 0; i < 10; i++) {
+        const size = 120;
+        const img = spawnImage(Math.random() * window.innerWidth, Math.random() * window.innerHeight, size, size, ['spin-3d']);
+        bouncers.push({
+            element: img,
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            vx: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 5 + 5),
+            vy: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 5 + 5),
+            size: size
+        });
+    }
+
+    // 4. Gravity/Explosion on Click
+    document.addEventListener('click', (e) => {
+        const numParticles = 15; // 15 MORE images per click
+        for (let i = 0; i < numParticles; i++) {
+            const size = Math.random() * 80 + 30;
+            // Extremely wild random classes
+            const randomClass = chaoticClasses[Math.floor(Math.random() * chaoticClasses.length)];
+
+            const img = spawnImage(e.clientX - size/2, e.clientY - size/2, size, size, [randomClass]);
+
+            explosions.push({
+                element: img,
+                x: e.clientX - size/2,
+                y: e.clientY - size/2,
+                vx: (Math.random() - 0.5) * 30, // Violent horizontal velocity
+                vy: (Math.random() - 1) * 40,   // Violent upward velocity
+                gravity: 1.5,                   // Gravity pulling down
+                rotation: Math.random() * 360,
+                rotSpeed: (Math.random() - 0.5) * 20
+            });
+        }
+    });
+
+    // 5. Main Game/Animation Loop
+    function animate() {
+        // Update Mouse Trail
+        trailers.forEach((trailer, index) => {
+            // Lerp towards mouse position
+            trailer.x += (mouseX - trailer.x) * (0.1 - (index * 0.005));
+            trailer.y += (mouseY - trailer.y) * (0.1 - (index * 0.005));
+            trailer.element.style.transform = `translate(${trailer.x - 30}px, ${trailer.y - 30}px)`;
+        });
+
+        // Update DVD Bouncers
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        bouncers.forEach(b => {
+            b.x += b.vx;
+            b.y += b.vy;
+
+            // Bounce off edges
+            if (b.x <= 0 || b.x + b.size >= w) b.vx *= -1;
+            if (b.y <= 0 || b.y + b.size >= h) b.vy *= -1;
+
+            b.element.style.left = b.x + 'px';
+            b.element.style.top = b.y + 'px';
+        });
+
+        // Update Click Explosions (Gravity)
+        for (let i = explosions.length - 1; i >= 0; i--) {
+            let p = explosions[i];
+
+            p.vy += p.gravity; // Apply gravity
+            p.x += p.vx;
+            p.y += p.vy;
+            p.rotation += p.rotSpeed;
+
+            p.element.style.left = p.x + 'px';
+            p.element.style.top = p.y + 'px';
+            p.element.style.transform = `rotate(${p.rotation}deg)`;
+
+            // Remove if they fall way off the bottom of the screen to prevent freezing the browser eventually
+            if (p.y > h + 500) {
+                p.element.remove();
+                explosions.splice(i, 1);
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    // Start loop
+    animate();
 </script>
 </body>
 </html>
