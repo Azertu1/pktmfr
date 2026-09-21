@@ -6,5 +6,32 @@
 </head>
 <body>
 <h1>pktm.fr</h1>
+<div>
+    <h3>Utilisation CPU Hôte : <span id="cpu-val">--</span>%</h3>
+    <h3>Mémoire RAM : <span id="ram-val">--</span></h3>
+</div>
+
+<script>
+    async function updateServerStats() {
+        try {
+            const res = await fetch('/api/metrics');
+            const data = await res.json();
+
+            // Mise à jour CPU
+            document.getElementById('cpu-val').innerText = data.cpu;
+
+            // Mise à jour RAM (conversion en Go)
+            const usedGb = (data.memory.used / 1024 / 1024 / 1024).toFixed(2);
+            const totalGb = (data.memory.total / 1024 / 1024 / 1024).toFixed(2);
+            document.getElementById('ram-val').innerText = `${usedGb} Go / ${totalGb} Go (${data.memory.percent}%)`;
+        } catch (e) {
+            console.error("Erreurfetch métriques", e);
+        }
+    }
+
+    // Actualisation toutes les 2 secondes
+    setInterval(updateServerStats, 2000);
+    updateServerStats();
+</script>
 </body>
 </html>
