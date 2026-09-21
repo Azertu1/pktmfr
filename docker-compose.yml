@@ -1,0 +1,31 @@
+services:
+  pktm-frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+
+  pktm-backend:
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      - pktm-bdd # S'assure que la DB démarre avant le backend
+    environment:
+      # Variables injectées dans Node.js
+      - DB_HOST=pktm-bdd
+      - DB_USER=pktm
+      - DB_PASSWORD=124509
+      - DB_NAME=pktmfr
+
+  pktm-bdd:
+    image: postgres:16-alpine # Légère et nativement compatible ARM64
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pktm
+      POSTGRES_PASSWORD: 124509
+      POSTGRES_DB: pktmfr
+    volumes:
+      - db-data:/var/lib/postgresql/data # Persistance des données
+
+volumes:
+  db-data: # Déclaration du volume nommé
