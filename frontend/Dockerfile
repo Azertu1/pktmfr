@@ -5,5 +5,6 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 # 2. On copie uniquement les fichiers web dans le dossier public
 COPY index.html /usr/share/nginx/html/
+COPY metrics/index.html /usr/share/nginx/html/metrics
 
 EXPOSE 80
