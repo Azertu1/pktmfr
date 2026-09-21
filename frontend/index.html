@@ -27,6 +27,8 @@
 </head>
 <body>
 
+<h1>IP : 88.96.39.248</h1>
+
 <div class="dashboard">
     <div class="chart-container">
         <div class="chart-title">CPU (%)</div>
@@ -52,7 +54,7 @@
         responsive: true,
         maintainAspectRatio: false,
         plugins: { legend: { display: false }, tooltip: { enabled: false } },
-        elements: { point: { radius: 2 } }, // Masque les points pour une ligne pure
+        elements: { point: { radius: 1 } }, // Masque les points pour une ligne pure
         scales: {
             y: { beginAtZero: true, max: 100, border: { display: false }, grid: { color: '#000000' }, ticks: { color: '#000000' } },
             x: { display: true }
@@ -99,7 +101,7 @@
         }
     }
 
-    setInterval(updateMetrics, 1500);
+    setInterval(updateMetrics, 750);
 </script>
 </body>
 </html>
