@@ -2,106 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ressources</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body { background-color: #ffffff; color: #000000; font-family: sans-serif; }
-
-        /* Conteneur principal flexible pour organiser vos Divs */
-        .dashboard { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px; }
-
-        /* Les divs que vous pouvez déplacer et intégrer n'importe où */
-        .chart-container {
-            width: 280px;
-            height: 200px;
-            background: #ffffff;
-            padding: 15px;
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .chart-title { font-size: 14px; color: #000000; margin-bottom: 10px; font-weight: 400; text-transform: lowercase; letter-spacing: 1px;}
-    </style>
+    <title>pktm.fr</title>
 </head>
 <body>
 
-<h1 class="title">88.96.39.248</h1>
-
-<div class="dashboard">
-    <div class="chart-container">
-        <div class="chart-title">CPU (%)</div>
-        <canvas id="cpuChart"></canvas>
-    </div>
-    <div class="chart-container">
-        <div class="chart-title">Mémoire (%)</div>
-        <canvas id="memChart"></canvas>
-    </div>
-    <div class="chart-container">
-        <div class="chart-title">Disque (%)</div>
-        <canvas id="diskChart"></canvas>
-    </div>
-    <div class="chart-container">
-        <div class="chart-title">Réseau (MB/s)</div>
-        <canvas id="netChart"></canvas>
-    </div>
-</div>
-
-<script>
-    // Configuration commune, très sobre (pas de légendes, pas de quadrillage vertical)
-    const commonOptions = {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { enabled: false } },
-        elements: { point: { radius: 1 } }, // Masque les points pour une ligne pure
-        scales: {
-            y: { beginAtZero: true, max: 100, border: { display: false }, grid: { color: '#000000' }, ticks: { color: '#000000' } },
-            x: { display: true }
-        }
-    };
-
-    const createChart = (ctx, color) => new Chart(ctx, {
-        type: 'line',
-        data: { labels: Array(20).fill(''), datasets: [{ data: Array(20).fill(0), borderColor: color, tension: 0.4, borderWidth: 2 }] },
-        options: commonOptions
-    });
-
-    const cpuChart = createChart(document.getElementById('cpuChart'), '#000000');
-    const memChart = createChart(document.getElementById('memChart'), '#000000');
-    const diskChart = createChart(document.getElementById('diskChart'), '#000000');
-
-    // Le réseau n'a pas de limite fixe à 100 sur l'axe Y
-    const netOptions = JSON.parse(JSON.stringify(commonOptions));
-    delete netOptions.scales.y.max;
-    const netChart = new Chart(document.getElementById('netChart'), {
-        type: 'line',
-        data: { labels: Array(20).fill(''), datasets: [{ data: Array(20).fill(0), borderColor: '#000000', tension: 0.4, borderWidth: 2 }] },
-        options: netOptions
-    });
-
-    async function updateMetrics() {
-        try {
-            const res = await fetch('/api/metrics');
-            const data = await res.json();
-
-            const updateSeries = (chart, value) => {
-                chart.data.datasets[0].data.push(value);
-                chart.data.datasets[0].data.shift();
-                chart.update('none'); // Update sans animation lourde
-            };
-
-            updateSeries(cpuChart, data.cpu);
-            updateSeries(memChart, data.memory);
-            updateSeries(diskChart, data.disk);
-            updateSeries(netChart, data.network);
-
-        } catch (err) {
-            console.error("Impossible de joindre l'API:", err);
-        }
-    }
-
-    setInterval(updateMetrics, 750);
-</script>
+<h1 class="title">pktm.fr</h1>
+<a href="metrics">uttilisation des ressources</a>
 </body>
 </html>
