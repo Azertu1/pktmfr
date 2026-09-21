@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Monitoring VPS</title>
+    <title>Ressources</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { background-color: #1a1a1a; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #ffffff; color: #ffffff; font-family: sans-serif; }
 
         /* Conteneur principal flexible pour organiser vos Divs */
         .dashboard { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px; }
@@ -14,7 +14,7 @@
         .chart-container {
             width: 280px;
             height: 200px;
-            background: #2a2a2a;
+            background: #ffffff;
             padding: 15px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
@@ -23,7 +23,7 @@
             align-items: center;
         }
 
-        .chart-title { font-size: 14px; color: #aaa; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;}
+        .chart-title { font-size: 14px; color: #000000; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;}
     </style>
 </head>
 <body>
@@ -53,10 +53,10 @@
         responsive: true,
         maintainAspectRatio: false,
         plugins: { legend: { display: false }, tooltip: { enabled: false } },
-        elements: { point: { radius: 0 } }, // Masque les points pour une ligne pure
+        elements: { point: { radius: 2 } }, // Masque les points pour une ligne pure
         scales: {
-            y: { beginAtZero: true, max: 100, border: { display: false }, grid: { color: '#444' }, ticks: { color: '#888' } },
-            x: { display: false } // Masque complètement l'axe du temps pour le minimalisme
+            y: { beginAtZero: true, max: 100, border: { display: false }, grid: { color: '#000000' }, ticks: { color: '#000000' } },
+            x: { display: true }
         }
     };
 
@@ -66,16 +66,16 @@
         options: commonOptions
     });
 
-    const cpuChart = createChart(document.getElementById('cpuChart'), '#ef4444');
-    const memChart = createChart(document.getElementById('memChart'), '#3b82f6');
-    const diskChart = createChart(document.getElementById('diskChart'), '#eab308');
+    const cpuChart = createChart(document.getElementById('cpuChart'), '#000000');
+    const memChart = createChart(document.getElementById('memChart'), '#000000');
+    const diskChart = createChart(document.getElementById('diskChart'), '#000000');
 
     // Le réseau n'a pas de limite fixe à 100 sur l'axe Y
     const netOptions = JSON.parse(JSON.stringify(commonOptions));
     delete netOptions.scales.y.max;
     const netChart = new Chart(document.getElementById('netChart'), {
         type: 'line',
-        data: { labels: Array(20).fill(''), datasets: [{ data: Array(20).fill(0), borderColor: '#10b981', tension: 0.4, borderWidth: 2 }] },
+        data: { labels: Array(20).fill(''), datasets: [{ data: Array(20).fill(0), borderColor: '#000000', tension: 0.4, borderWidth: 2 }] },
         options: netOptions
     });
 
