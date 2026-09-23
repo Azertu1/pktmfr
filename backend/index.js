@@ -63,17 +63,19 @@ const origin = `http://localhost:8080`; // À remplacer par https://pktm.fr en p
 // Création d'un nouveau Passkey
 // --- 3. ROUTES API PASSKEY ---
 
+// --- 3. ROUTES API PASSKEY ---
+
 // Création d'un nouveau Passkey
 app.get('/api/register/options', async (req, res) => {
     try {
         const user = { id: 'user_isidore', username: 'isidore@pktm.fr' };
 
-        // 1. AWAIT obligatoire en v9
-        // 2. Buffer.from() obligatoire pour le userID en v9
         const options = await generateRegistrationOptions({
-            rpName,
-            rpID,
-            userID: Buffer.from(user.id, 'utf8'),
+            rpName: 'pktm.fr SSO',
+            // DYNAMIQUE : S'adapte à localhost, 127.0.0.1 ou pktm.fr
+            rpID: req.hostname,
+            // CORRECTION : La v9 exige un Uint8Array pour l'ID utilisateur
+            userID: new Uint8Array(Buffer.from(user.id)),
             userName: user.username,
             authenticatorSelection: { userVerification: 'preferred' }
         });
@@ -81,31 +83,35 @@ app.get('/api/register/options', async (req, res) => {
         req.session.challenge = options.challenge;
         res.json(options);
     } catch (error) {
-        console.error("Erreur génération options:", error);
         res.status(500).json({ error: error.message });
     }
 });
 
 app.post('/api/register/verify', async (req, res) => {
     try {
-        // Sécurité anti-crash si la session est perdue
         if (!req.session || !req.session.challenge) {
-            return res.status(400).json({ error: 'Session expirée, veuillez recharger la page.' });
+            return res.status(400).json({ error: 'Session expirée' });
         }
+
+        // DYNAMIQUE : Récupère l'origine exacte (ex: http://127.0.0.1:8080)
+        const origin = `${req.protocol}://${req.get('host')}`;
 
         const verification = await verifyRegistrationResponse({
             response: req.body,
             expectedChallenge: req.session.challenge,
             expectedOrigin: origin,
-            expectedRPID: rpID
+            expectedRPID: req.hostname
         });
 
         if (verification.verified) {
             const { credentialID, credentialPublicKey, counter } = verification.registrationInfo;
-            // Sauvegarde en base de données
+
+            // CORRECTION : On convertit explicitement en chaîne Base64URL
+            const credentialIdBase64url = Buffer.from(credentialID).toString('base64url');
+
             await pool.query(
                 'INSERT INTO passkeys (credential_id, user_id, public_key, counter) VALUES ($1, $2, $3, $4)',
-                [credentialID.toString('base64'), 'user_isidore', credentialPublicKey, counter]
+                [credentialIdBase64url, 'user_isidore', credentialPublicKey, counter]
             );
             return res.json({ verified: true });
         }
@@ -119,12 +125,12 @@ app.get('/api/login/options', async (req, res) => {
     try {
         const { rows } = await pool.query("SELECT credential_id FROM passkeys WHERE user_id = 'user_isidore'");
 
-        // AWAIT obligatoire en v9
         const options = await generateAuthenticationOptions({
-            rpID,
+            rpID: req.hostname,
             userVerification: 'preferred',
             allowCredentials: rows.map(row => ({
-                id: Buffer.from(row.credential_id, 'base64'),
+                // CORRECTION : L'ID est maintenant envoyé sous forme de chaîne de caractères pure
+                id: row.credential_id,
                 type: 'public-key'
             }))
         });
@@ -132,37 +138,38 @@ app.get('/api/login/options', async (req, res) => {
         req.session.challenge = options.challenge;
         res.json(options);
     } catch (error) {
-        console.error("Erreur génération auth options:", error);
         res.status(500).json({ error: error.message });
     }
 });
 
 app.post('/api/login/verify', async (req, res) => {
     try {
-        // Sécurité anti-crash
         if (!req.session || !req.session.challenge) {
-            return res.status(400).json({ error: 'Session expirée, veuillez recharger la page.' });
+            return res.status(400).json({ error: 'Session expirée' });
         }
 
         const body = req.body;
+        const origin = `${req.protocol}://${req.get('host')}`;
+
         const { rows } = await pool.query('SELECT * FROM passkeys WHERE credential_id = $1', [body.id]);
         if (rows.length === 0) return res.status(400).json({ error: 'Passkey inconnu' });
 
         const passkey = rows[0];
+
         const verification = await verifyAuthenticationResponse({
             response: body,
             expectedChallenge: req.session.challenge,
             expectedOrigin: origin,
-            expectedRPID: rpID,
+            expectedRPID: req.hostname,
             authenticator: {
-                credentialID: Buffer.from(passkey.credential_id, 'base64'),
-                credentialPublicKey: passkey.public_key,
+                // CORRECTION : Reconversion stricte au format attendu par la librairie
+                credentialID: new Uint8Array(Buffer.from(passkey.credential_id, 'base64url')),
+                credentialPublicKey: new Uint8Array(passkey.public_key),
                 counter: passkey.counter
             }
         });
 
         if (verification.verified) {
-            // Sécurité anti-rejeu : mise à jour du compteur
             await pool.query('UPDATE passkeys SET counter = $1 WHERE credential_id = $2', [verification.authenticationInfo.newCounter, passkey.credential_id]);
 
             const uid = req.query.uid;
