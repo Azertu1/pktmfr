@@ -40,7 +40,7 @@
 
     async function login() {
         try {
-            const optResp = await fetch('/api/login/options', credentials: 'include');
+            const optResp = await fetch('/api/login/options', {credentials: 'include'});
             const options = await optResp.json();
             const asseResp = await startAuthentication(options);
 
