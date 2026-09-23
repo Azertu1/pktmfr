@@ -1,3 +1,5 @@
+require('dotenv').config(); // 1. Chargement indispensable des variables d'environnement
+
 const express = require('express');
 const si = require('systeminformation');
 const { Pool } = require('pg');
@@ -9,7 +11,12 @@ const {
 } = require('@simplewebauthn/server');
 
 const app = express();
+
+// 2. Configuration cruciale pour préserver les sessions derrière Nginx
+app.set('trust proxy', 1);
+
 app.use(express.json());
+// ... la suite du code reste inchangée
 
 // --- 1. CONFIGURATION BASE DE DONNÉES POSTGRESQL ---
 const pool = new Pool({
