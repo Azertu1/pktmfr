@@ -61,25 +61,48 @@ const origin = `http://localhost:8080`; // À remplacer par https://pktm.fr en p
 // --- 3. ROUTES API PASSKEY ---
 
 // Création d'un nouveau Passkey
+// --- 3. ROUTES API PASSKEY ---
+
+// Création d'un nouveau Passkey
 app.get('/api/register/options', async (req, res) => {
-    const user = { id: 'user_isidore', username: 'isidore@pktm.fr' };
-    const options = generateRegistrationOptions({
-        rpName, rpID, userID: user.id, userName: user.username,
-        authenticatorSelection: { userVerification: 'preferred' }
-    });
-    req.session.challenge = options.challenge;
-    res.json(options);
+    try {
+        const user = { id: 'user_isidore', username: 'isidore@pktm.fr' };
+
+        // 1. AWAIT obligatoire en v9
+        // 2. Buffer.from() obligatoire pour le userID en v9
+        const options = await generateRegistrationOptions({
+            rpName,
+            rpID,
+            userID: Buffer.from(user.id, 'utf8'),
+            userName: user.username,
+            authenticatorSelection: { userVerification: 'preferred' }
+        });
+
+        req.session.challenge = options.challenge;
+        res.json(options);
+    } catch (error) {
+        console.error("Erreur génération options:", error);
+        res.status(500).json({ error: error.message });
+    }
 });
 
 app.post('/api/register/verify', async (req, res) => {
-
     try {
+        // Sécurité anti-crash si la session est perdue
+        if (!req.session || !req.session.challenge) {
+            return res.status(400).json({ error: 'Session expirée, veuillez recharger la page.' });
+        }
+
         const verification = await verifyRegistrationResponse({
-            response: req.body, expectedChallenge: req.session.challenge, expectedOrigin: origin, expectedRPID: rpID
+            response: req.body,
+            expectedChallenge: req.session.challenge,
+            expectedOrigin: origin,
+            expectedRPID: rpID
         });
+
         if (verification.verified) {
             const { credentialID, credentialPublicKey, counter } = verification.registrationInfo;
-            // Sauvegarde dans ta base PostgreSQL
+            // Sauvegarde en base de données
             await pool.query(
                 'INSERT INTO passkeys (credential_id, user_id, public_key, counter) VALUES ($1, $2, $3, $4)',
                 [credentialID.toString('base64'), 'user_isidore', credentialPublicKey, counter]
@@ -93,27 +116,44 @@ app.post('/api/register/verify', async (req, res) => {
 
 // Authentification avec un Passkey
 app.get('/api/login/options', async (req, res) => {
-    // On récupère tes Passkeys depuis Postgres
-    const { rows } = await pool.query("SELECT credential_id FROM passkeys WHERE user_id = 'user_isidore'");
+    try {
+        const { rows } = await pool.query("SELECT credential_id FROM passkeys WHERE user_id = 'user_isidore'");
 
-    const options = generateAuthenticationOptions({
-        rpID, userVerification: 'preferred',
-        allowCredentials: rows.map(row => ({ id: Buffer.from(row.credential_id, 'base64'), type: 'public-key' }))
-    });
-    req.session.challenge = options.challenge;
-    res.json(options);
+        // AWAIT obligatoire en v9
+        const options = await generateAuthenticationOptions({
+            rpID,
+            userVerification: 'preferred',
+            allowCredentials: rows.map(row => ({
+                id: Buffer.from(row.credential_id, 'base64'),
+                type: 'public-key'
+            }))
+        });
+
+        req.session.challenge = options.challenge;
+        res.json(options);
+    } catch (error) {
+        console.error("Erreur génération auth options:", error);
+        res.status(500).json({ error: error.message });
+    }
 });
 
 app.post('/api/login/verify', async (req, res) => {
     try {
+        // Sécurité anti-crash
+        if (!req.session || !req.session.challenge) {
+            return res.status(400).json({ error: 'Session expirée, veuillez recharger la page.' });
+        }
+
         const body = req.body;
-        // On récupère la clé publique correspondante dans la DB
         const { rows } = await pool.query('SELECT * FROM passkeys WHERE credential_id = $1', [body.id]);
         if (rows.length === 0) return res.status(400).json({ error: 'Passkey inconnu' });
 
         const passkey = rows[0];
         const verification = await verifyAuthenticationResponse({
-            response: body, expectedChallenge: req.session.challenge, expectedOrigin: origin, expectedRPID: rpID,
+            response: body,
+            expectedChallenge: req.session.challenge,
+            expectedOrigin: origin,
+            expectedRPID: rpID,
             authenticator: {
                 credentialID: Buffer.from(passkey.credential_id, 'base64'),
                 credentialPublicKey: passkey.public_key,
@@ -122,12 +162,11 @@ app.post('/api/login/verify', async (req, res) => {
         });
 
         if (verification.verified) {
-            // Mise à jour du compteur anti-rejeu dans Postgres
+            // Sécurité anti-rejeu : mise à jour du compteur
             await pool.query('UPDATE passkeys SET counter = $1 WHERE credential_id = $2', [verification.authenticationInfo.newCounter, passkey.credential_id]);
 
             const uid = req.query.uid;
             if (uid) {
-                // Succès : On dit à OIDC que l'utilisateur 'user_isidore' est connecté
                 const result = { login: { accountId: passkey.user_id } };
                 const redirectTo = await oidc.interactionResult(req, res, uid, result);
                 return res.json({ verified: true, redirectTo });
