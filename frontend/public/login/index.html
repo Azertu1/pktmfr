@@ -21,12 +21,13 @@
 
     async function register() {
         try {
-            const optResp = await fetch('/api/register/options');
+            const optResp = await fetch('/api/register/options', {credentials: 'include'});
             const options = await optResp.json();
             const asseResp = await startRegistration(options);
 
             const verifyResp = await fetch('/api/register/verify', {
                 method: 'POST', headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
                 body: JSON.stringify(asseResp),
             });
             if ((await verifyResp.json()).verified) {
@@ -39,13 +40,14 @@
 
     async function login() {
         try {
-            const optResp = await fetch('/api/login/options');
+            const optResp = await fetch('/api/login/options', credentials: 'include');
             const options = await optResp.json();
             const asseResp = await startAuthentication(options);
 
             const url = uid ? `/api/login/verify?uid=${uid}` : '/api/login/verify';
             const verifyResp = await fetch(url, {
                 method: 'POST', headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
                 body: JSON.stringify(asseResp),
             });
             const result = await verifyResp.json();

@@ -72,6 +72,7 @@ app.get('/api/register/options', async (req, res) => {
 });
 
 app.post('/api/register/verify', async (req, res) => {
+
     try {
         const verification = await verifyRegistrationResponse({
             response: req.body, expectedChallenge: req.session.challenge, expectedOrigin: origin, expectedRPID: rpID
