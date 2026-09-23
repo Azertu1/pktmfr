@@ -15,7 +15,10 @@
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.11.3",
     "socket.io": "^4.7.5",
-    "systeminformation": "^5.21.0"
+    "systeminformation": "^5.21.0",
+    "@simplewebauthn/server": "^9.0.0",
+    "express-session": "^1.17.3",
+    "oidc-provider": "^8.4.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

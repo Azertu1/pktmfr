@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SSO Login - pktm.fr</title>
+    <script src="https://unpkg.com/@simplewebauthn/browser/dist/bundle/index.umd.min.js"></script>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 15px; margin: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<h1>Connexion Sécurisée</h1>
+<button onclick="register()">Créer mon Passkey</button>
+<button onclick="login()">Se connecter</button>
+<p id="msg"></p>
+
+<script>
+    const { startRegistration, startAuthentication } = SimpleWebAuthnBrowser;
+    const uid = new URLSearchParams(window.location.search).get('uid');
+
+    async function register() {
+        try {
+            const optResp = await fetch('/api/register/options');
+            const options = await optResp.json();
+            const asseResp = await startRegistration(options);
+
+            const verifyResp = await fetch('/api/register/verify', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(asseResp),
+            });
+            if ((await verifyResp.json()).verified) {
+                document.getElementById('msg').innerText = 'Passkey enregistré dans PostgreSQL !';
+            }
+        } catch (err) {
+            document.getElementById('msg').innerText = 'Erreur: ' + err;
+        }
+    }
+
+    async function login() {
+        try {
+            const optResp = await fetch('/api/login/options');
+            const options = await optResp.json();
+            const asseResp = await startAuthentication(options);
+
+            const url = uid ? `/api/login/verify?uid=${uid}` : '/api/login/verify';
+            const verifyResp = await fetch(url, {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(asseResp),
+            });
+            const result = await verifyResp.json();
+
+            if (result.verified) {
+                if (result.redirectTo) window.location.href = result.redirectTo; // Retour au projet client
+                else document.getElementById('msg').innerText = 'Connecté avec succès !';
+            }
+        } catch (err) {
+            document.getElementById('msg').innerText = 'Échec: ' + err;
+        }
+    }
+</script>
+</body>
+</html>
