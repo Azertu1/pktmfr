@@ -2,26 +2,81 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSO Login - pktm.fr</title>
     <script src="https://unpkg.com/@simplewebauthn/browser@9.0.1/dist/bundle/index.umd.min.js"></script>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-        button { padding: 10px 15px; margin: 10px; cursor: pointer; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; margin: 0; color: #1f2937;
+        }
+        .container {
+            background: white; padding: 2.5rem 2rem; border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-align: center; width: 100%; max-width: 380px;
+            transition: opacity 0.3s ease;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #6b7280; margin-bottom: 2rem; font-size: 0.95rem; }
+
+        button {
+            background-color: #000; color: white; border: none;
+            padding: 12px 20px; margin: 8px 0; border-radius: 8px;
+            cursor: pointer; width: 100%; font-size: 1rem; font-weight: 500;
+            transition: background 0.2s;
+        }
+        button:hover { background-color: #374151; }
+        .secondary { background-color: #e5e7eb; color: #374151; }
+        .secondary:hover { background-color: #d1d5db; }
+        #msg { margin-top: 1rem; color: #dc2626; font-size: 0.9rem; min-height: 20px; }
+
+        /* Design du tableau de bord après connexion */
+        #dashboard { display: none; }
+        .avatar {
+            width: 70px; height: 70px; background: #10b981; color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; font-weight: bold; margin: 0 auto 1.5rem;
+        }
+        .badge {
+            background: #d1fae5; color: #065f46; padding: 6px 12px;
+            border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-block;
+        }
     </style>
 </head>
 <body>
-<h1>Connexion Sécurisée</h1>
-<button onclick="register()">Créer mon Passkey</button>
-<button onclick="login()">Se connecter</button>
-<p id="msg"></p>
+
+<!-- Boîte de connexion -->
+<div class="container" id="auth-box">
+    <h1>🔑 SSO pktm.fr</h1>
+    <p class="subtitle">Identifiez-vous avec votre appareil</p>
+
+    <button onclick="login()">Se connecter (Passkey)</button>
+    <button class="secondary" onclick="register()">Créer mon Passkey</button>
+    <p id="msg"></p>
+</div>
+
+<!-- Espace visuel affiché après la connexion -->
+<div class="container" id="dashboard">
+    <div class="avatar" id="avatar-letter">?</div>
+    <h1 id="welcome-text">Bienvenue !</h1>
+    <div style="margin: 15px 0;"><span class="badge">● Session Globale Active</span></div>
+    <p class="subtitle" style="margin-bottom: 2rem;">
+        Vous êtes authentifié sur le fournisseur d'identité. Vos futurs projets utiliseront cette session.
+    </p>
+    <button class="secondary" onclick="window.location.href='/'">Retour à l'accueil</button>
+</div>
 
 <script>
     const { startRegistration, startAuthentication } = SimpleWebAuthnBrowser;
     const uid = new URLSearchParams(window.location.search).get('uid');
 
     async function register() {
+        const msgEl = document.getElementById('msg');
+        msgEl.innerText = "Interaction avec l'appareil...";
         try {
-            const optResp = await fetch('/api/register/options', {credentials: 'include'});
+            const optResp = await fetch('/api/register/options', { credentials: 'include' });
             const options = await optResp.json();
             const asseResp = await startRegistration(options);
 
@@ -30,17 +85,22 @@
                 credentials: 'include',
                 body: JSON.stringify(asseResp),
             });
+
             if ((await verifyResp.json()).verified) {
-                document.getElementById('msg').innerText = 'Passkey enregistré dans PostgreSQL !';
+                msgEl.style.color = '#10b981'; // Vert
+                msgEl.innerText = 'Passkey créé et sauvegardé avec succès !';
             }
         } catch (err) {
-            document.getElementById('msg').innerText = 'Erreur: ' + err;
+            msgEl.style.color = '#dc2626'; // Rouge
+            msgEl.innerText = 'Annulation ou erreur système.';
         }
     }
 
     async function login() {
+        const msgEl = document.getElementById('msg');
+        msgEl.innerText = "En attente de biométrie...";
         try {
-            const optResp = await fetch('/api/login/options', {credentials: 'include'});
+            const optResp = await fetch('/api/login/options', { credentials: 'include' });
             const options = await optResp.json();
             const asseResp = await startAuthentication(options);
 
@@ -53,11 +113,25 @@
             const result = await verifyResp.json();
 
             if (result.verified) {
-                if (result.redirectTo) window.location.href = result.redirectTo; // Retour au projet client
-                else document.getElementById('msg').innerText = 'Connecté avec succès !';
+                if (result.redirectTo) {
+                    window.location.href = result.redirectTo; // Redirection OIDC
+                } else {
+                    // Bascule visuelle vers le dashboard
+                    document.getElementById('auth-box').style.display = 'none';
+                    document.getElementById('dashboard').style.display = 'block';
+
+                    // Personnalisation du dashboard
+                    const username = result.username || 'Utilisateur';
+                    document.getElementById('welcome-text').innerText = 'Bonjour, ' + username;
+                    document.getElementById('avatar-letter').innerText = username.charAt(0).toUpperCase();
+                }
+            } else {
+                msgEl.style.color = '#dc2626';
+                msgEl.innerText = result.error || 'Identifiant non reconnu.';
             }
         } catch (err) {
-            document.getElementById('msg').innerText = 'Échec: ' + err;
+            msgEl.style.color = '#dc2626';
+            msgEl.innerText = 'Échec de la connexion.';
         }
     }
 </script>

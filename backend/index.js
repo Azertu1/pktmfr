@@ -145,11 +145,13 @@ app.get('/api/login/options', async (req, res) => {
 app.post('/api/login/verify', async (req, res) => {
     try {
         if (!req.session || !req.session.challenge) {
-            return res.status(400).json({ error: 'Session expirée' });
+            return res.status(400).json({ error: 'Session expirée, veuillez recharger la page.' });
         }
 
         const body = req.body;
-        const origin = `${req.protocol}://${req.get('host')}`;
+
+        // CORRECTION 1 : Gérer le proxy Nginx en récupérant l'origine réelle du navigateur
+        const expectedOrigin = req.get('origin') || `${req.headers['x-forwarded-proto'] || req.protocol}://${req.get('host')}`;
 
         const { rows } = await pool.query('SELECT * FROM passkeys WHERE credential_id = $1', [body.id]);
         if (rows.length === 0) return res.status(400).json({ error: 'Passkey inconnu' });
@@ -159,13 +161,13 @@ app.post('/api/login/verify', async (req, res) => {
         const verification = await verifyAuthenticationResponse({
             response: body,
             expectedChallenge: req.session.challenge,
-            expectedOrigin: origin,
+            expectedOrigin: expectedOrigin, // <-- Utilisation de l'origine corrigée
             expectedRPID: req.hostname,
             authenticator: {
-                // CORRECTION : Reconversion stricte au format attendu par la librairie
                 credentialID: new Uint8Array(Buffer.from(passkey.credential_id, 'base64url')),
                 credentialPublicKey: new Uint8Array(passkey.public_key),
-                counter: passkey.counter
+                // CORRECTION 2 : Convertir le String renvoyé par PostgreSQL en entier
+                counter: parseInt(passkey.counter, 10)
             }
         });
 
@@ -178,9 +180,11 @@ app.post('/api/login/verify', async (req, res) => {
                 const redirectTo = await oidc.interactionResult(req, res, uid, result);
                 return res.json({ verified: true, redirectTo });
             }
-            res.json({ verified: true });
+            // Envoi de l'identifiant pour l'interface visuelle
+            res.json({ verified: true, username: passkey.user_id });
         }
     } catch (error) {
+        console.error("Erreur détaillée login:", error);
         res.status(400).json({ error: error.message });
     }
 });
