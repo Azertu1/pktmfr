@@ -1,0 +1,1731 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Codex//Calendrier des paiements//FR
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Paiements — octobre à décembre 2026
+X-WR-CALDESC:Prévisions de paiements en journée entière — dates et éc
+ héanciers à confirmer
+BEGIN:VEVENT
+UID:e86236a2-835a-543a-9516-7342ee8d28d0@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:88\,91 € — Cofidis — Amazon
+DESCRIPTION:Montant observé : 88\,91 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 01/09\, débité le 03/09.\nDate prévisionnel
+ le : 01/10/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:b4d67179-d0e2-5a38-94a9-0c36a3c94838@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:2\,99 € — Apple — service à identifier
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09. Service exact et périodicité 
+ à confirmer.\nDate prévisionnelle : 02/10/2026. Projection mensuelle à 
+ partir d’un seul mois de données \; date et montant futurs non garantis
+ . Le débit bancaire peut apparaître quelques jours après le paiement\, 
+ notamment autour des week-ends et jours fériés.\nSource : Comptes Septem
+ bre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, d
+ isponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:46e60ac8-c019-5521-b5d4-21da06ecec4d@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:3\,99 € — reMarkable
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09.\nDate prévisionnelle : 02/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:67b04ae5-21ce-502e-9340-1f71e94254e9@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:4\,65 € — Smovengo / Vélib’ [à confirmer]
+DESCRIPTION:Montant observé : 4\,65 €.\nType : Charge à confirmer.\nPai
+ ement carte du 02/09\, débité le 03/09. Peut correspondre à un abonneme
+ nt ou à une consommation à l’usage. Les répétitions mensuelles sont 
+ de simples rappels de vérification\, pas des échéances confirmées.\nDa
+ te prévisionnelle : 02/10/2026. Projection mensuelle à partir d’un seu
+ l mois de données \; date et montant futurs non garantis. Le débit banca
+ ire peut apparaître quelques jours après le paiement\, notamment autour 
+ des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opéra
+ tions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité lib
+ re : ne bloque pas l’emploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:e395423a-caf8-5a96-9da3-fc3720e78be0@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:24\,99 € — Basic-Fit
+DESCRIPTION:Montant observé : 24\,99 €.\nType : abonnement Basic-Fit.\nP
+ rélèvement observé le 04/09/2026 \; période indiquée dans le libellé
+  : 04/09/2026 au 01/10/2026. Le calendrier suppose un renouvellement tous 
+ les 28 jours\, à confirmer dans le contrat. Il y a donc deux échéances 
+ prévues en octobre\, le 2 et le 30\, puis le 27 novembre et le 25 décemb
+ re. Le débit réel peut être décalé par les jours non ouvrés.\nSource
+  : Comptes Septembre.xlsx\, opération Basic-Fit du 04/09/2026.\nJournée 
+ entière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement — tous les 28 jours
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a9c1f8e5-40ca-57bf-84fd-5891cd12fb40@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:9\,93 € — Assurance du prêt Crédit Agricole
+DESCRIPTION:Montant observé : 9\,93 €.\nType : Assurance.\nRèglement du
+  03/09 : ASSU. CAAE PRET PERSONNEL 09/26.\nDate prévisionnelle : 03/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Assurance
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:84ffc427-2ce0-533c-9e38-e980c69a2e63@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:31\,32 € — Klarna — SNCF
+DESCRIPTION:Montant observé : 31\,32 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 04/09\, débité le 07/09.\nDate prévisionnel
+ le : 04/10/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:8a017cf0-188b-5b39-b6a0-39a80cc5b417@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:11\,28 € — Crédit Agricole — intérêts du prêt
+DESCRIPTION:Montant observé : 11\,28 €.\nType : Intérêts du prêt.\nRe
+ mboursement observé le 05/09\, libellé INTERETS. Ce montant représente 
+ uniquement les intérêts observés\, pas une mensualité complète capita
+ l et intérêts. Il peut varier.\nDate prévisionnelle : 05/10/2026. Proje
+ ction mensuelle à partir d’un seul mois de données \; date et montant 
+ futurs non garantis. Le débit bancaire peut apparaître quelques jours ap
+ rès le paiement\, notamment autour des week-ends et jours fériés.\nSour
+ ce : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJo
+ urnée entière\, disponibilité libre : ne bloque pas l’emploi du temps
+ .
+CATEGORIES:Intérêts du prêt
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:e3fa2c56-e873-5b2d-b00d-dfb3b84e32fc@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:99\,75 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 99\,75 €.\nType : Paiement échelonné.\nP
+ aiement carte du 05/09\, débité le 07/09. Échéancier distinct des paie
+ ments PayPal de 75\,00 € et 42\,50 €.\nDate prévisionnelle : 05/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nNombre d’échéances restantes et date de fin inconnus. Les occurr
+ ences jusqu’en décembre sont des prévisions à supprimer si le finance
+ ment est terminé \; le rythme mensuel reste à vérifier.\nSource : Compt
+ es Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée ent
+ ière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f718eba5-8ae4-5737-afdb-481972a16fcc@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:6\,00 € — IONOS
+DESCRIPTION:Montant observé : 6\,00 €.\nType : Abonnement probable.\nPai
+ ement carte du 10/09\, débité le 14/09. Périodicité à confirmer.\nDat
+ e prévisionnelle : 10/10/2026. Projection mensuelle à partir d’un seul
+  mois de données \; date et montant futurs non garantis. Le débit bancai
+ re peut apparaître quelques jours après le paiement\, notamment autour d
+ es week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opérat
+ ions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité libr
+ e : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:b863176b-130f-53ea-a5bb-b0c3e06680b2@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:3\,99 € — Google Play Apps [à confirmer]
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Charge à confirmer.\nPai
+ ement carte du 11/09\, débité le 14/09. Peut être un achat ponctuel ou 
+ un abonnement. Les répétitions mensuelles sont de simples rappels de vé
+ rification\, pas des échéances confirmées.\nDate prévisionnelle : 11/1
+ 0/2026. Projection mensuelle à partir d’un seul mois de données \; dat
+ e et montant futurs non garantis. Le débit bancaire peut apparaître quel
+ ques jours après le paiement\, notamment autour des week-ends et jours f
+ ériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 2
+ 8/09/2026.\nJournée entière\, disponibilité libre : ne bloque pas l’e
+ mploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:4a4be535-5707-5d74-91ce-5f58ce8111d1@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:6\,99 € — Amazon Prime
+DESCRIPTION:Montant observé : 6\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a5c52270-9898-5be7-ac12-ba90fd4b7b99@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:5\,99 € — Uber One
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a0dd01ea-5650-5dfd-90aa-7b5146bf7dec@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:5\,99 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 13/09\, débité le 15/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 13/10/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:4a69e2ae-41b1-5f5d-9378-189a3b235ea3@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:250\,64 € — CROUS — logement [à confirmer]
+DESCRIPTION:Montant observé : 250\,64 €.\nType : Charge à confirmer.\nP
+ aiement carte du 13/09\, débité le 14/09. Loyer probablement mensuel\, m
+ ais aucune date de prélèvement automatique n’est démontrée. Événem
+ ent servant de repère budgétaire.\nDate prévisionnelle : 13/10/2026. Pr
+ ojection mensuelle à partir d’un seul mois de données \; date et monta
+ nt futurs non garantis. Le débit bancaire peut apparaître quelques jours
+  après le paiement\, notamment autour des week-ends et jours fériés.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:038e6d64-5cb2-54dd-b8fa-676b22f6b484@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:55\,83 € — Bouygues Telecom — ligne …626
+DESCRIPTION:Montant observé : 55\,83 €.\nType : Télécommunications.\nP
+ rélèvement observé le 14/09 pour la ligne finissant par 626. Montant su
+ sceptible de varier selon la facture.\nDate prévisionnelle : 14/10/2026. 
+ Projection mensuelle à partir d’un seul mois de données \; date et mon
+ tant futurs non garantis. Le débit bancaire peut apparaître quelques jou
+ rs après le paiement\, notamment autour des week-ends et jours fériés.\
+ nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026
+ .\nJournée entière\, disponibilité libre : ne bloque pas l’emploi du 
+ temps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:7e0e440d-86cb-5d63-ac6a-ea0ec1799dcc@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:3\,99 € — Nintendo
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement présumé.\nPa
+ iement carte du 15/09\, débité le 16/09. Classé en abonnement dans le f
+ ichier \; nature exacte et périodicité à confirmer.\nDate prévisionnel
+ le : 15/10/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/
+ 2026 au 28/09/2026.\nJournée entière\, disponibilité libre : ne bloque 
+ pas l’emploi du temps.
+CATEGORIES:Abonnement présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:d8998931-d2d0-56a2-a02f-e805776681ec@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:3\,99 € — Bouygues Telecom — ligne …881
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Télécommunications.\nPr
+ élèvement observé le 18/09 pour la ligne finissant par 881. Montant sus
+ ceptible de varier selon la facture.\nDate prévisionnelle : 18/10/2026. P
+ rojection mensuelle à partir d’un seul mois de données \; date et mont
+ ant futurs non garantis. Le débit bancaire peut apparaître quelques jour
+ s après le paiement\, notamment autour des week-ends et jours fériés.\n
+ Source : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.
+ \nJournée entière\, disponibilité libre : ne bloque pas l’emploi du t
+ emps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:eb0c1b84-d2a8-59db-b7f7-19b61764f989@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:4\,99 € — Klarna member
+DESCRIPTION:Montant observé : 4\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 20/09\, débité le 21/09. Le libellé « member » suggèr
+ e un abonnement\, malgré la catégorie Prêt / 4X du fichier. À confirme
+ r.\nDate prévisionnelle : 20/10/2026. Projection mensuelle à partir d’
+ un seul mois de données \; date et montant futurs non garantis. Le débit
+  bancaire peut apparaître quelques jours après le paiement\, notamment a
+ utour des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, 
+ opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:5139b53f-d588-59ee-8b81-b31ebf3e4288@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:3\,00 € — Crédit Agricole — Offre Essentiel
+DESCRIPTION:Montant observé : 3\,00 €.\nType : Frais bancaires.\nCotisat
+ ion observée le 22/09.\nDate prévisionnelle : 22/10/2026. Projection men
+ suelle à partir d’un seul mois de données \; date et montant futurs no
+ n garantis. Le débit bancaire peut apparaître quelques jours après le p
+ aiement\, notamment autour des week-ends et jours fériés.\nSource : Comp
+ tes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée en
+ tière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Frais bancaires
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:c6bfdfdf-dab2-5bb4-972c-b733ee2ff875@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:2\,09 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 2\,09 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 22/09\, débité le 23/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 22/10/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:1b46a622-2402-5c41-b66c-f48783767493@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:33\,33 € — Floa
+DESCRIPTION:Montant observé : 33\,33 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 28/08\, débité le 31/08.\nDate prévisionnel
+ le : 28/10/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:40cd47ee-316f-5b15-862a-d64a1eab3522@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:2\,99 € — Discord Nitro Basic
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 29/08\, débité le 31/08.\nDate prévisionnelle : 29/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:8d3ab733-36e1-57b4-b4bb-384f5d635484@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:75\,00 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 75\,00 €.\nType : Paiement échelonné.\nP
+ aiement carte du 29/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 29/10/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:510cef23-6b26-536e-bb7c-121c56902d60@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:11\,99 € — Boulanger AppleCare
+DESCRIPTION:Montant observé : 11\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/10/2
+ 026. Projection mensuelle à partir d’un seul mois de données \; date e
+ t montant futurs non garantis. Le débit bancaire peut apparaître quelque
+ s jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:d133c601-322a-5a9a-b42d-a183cfb90a20@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:7\,99 € — YouTube Premium
+DESCRIPTION:Montant observé : 7\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/10/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a30e273e-093f-5cb1-be67-edfc8d3f3ef8@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:42\,50 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 42\,50 €.\nType : Paiement échelonné.\nP
+ aiement carte du 30/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 30/10/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1ba3f36-28dd-565b-8512-b41685af78f3@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:24\,99 € — Basic-Fit
+DESCRIPTION:Montant observé : 24\,99 €.\nType : abonnement Basic-Fit.\nP
+ rélèvement observé le 04/09/2026 \; période indiquée dans le libellé
+  : 04/09/2026 au 01/10/2026. Le calendrier suppose un renouvellement tous 
+ les 28 jours\, à confirmer dans le contrat. Il y a donc deux échéances 
+ prévues en octobre\, le 2 et le 30\, puis le 27 novembre et le 25 décemb
+ re. Le débit réel peut être décalé par les jours non ouvrés.\nSource
+  : Comptes Septembre.xlsx\, opération Basic-Fit du 04/09/2026.\nJournée 
+ entière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement — tous les 28 jours
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:5b8fbdd4-4946-5784-8045-c03fe31a763f@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:10\,99 € — Apple — autre service à identifier
+DESCRIPTION:Montant observé : 10\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 31/08\, débité le 01/09. Placé au dernier jour du mois 
+ lorsque le 31 n’existe pas. Service exact et périodicité à confirmer.
+ \nDate prévisionnelle : 31/10/2026. Projection mensuelle à partir d’un
+  seul mois de données \; date et montant futurs non garantis. Le débit b
+ ancaire peut apparaître quelques jours après le paiement\, notamment aut
+ our des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, op
+ érations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité
+  libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:bf5318e8-3992-5c26-9185-53d5aad4b1e4@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:88\,91 € — Cofidis — Amazon
+DESCRIPTION:Montant observé : 88\,91 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 01/09\, débité le 03/09.\nDate prévisionnel
+ le : 01/11/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:e97eefea-f337-5b42-9015-2ef617b4b83d@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:2\,99 € — Apple — service à identifier
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09. Service exact et périodicité 
+ à confirmer.\nDate prévisionnelle : 02/11/2026. Projection mensuelle à 
+ partir d’un seul mois de données \; date et montant futurs non garantis
+ . Le débit bancaire peut apparaître quelques jours après le paiement\, 
+ notamment autour des week-ends et jours fériés.\nSource : Comptes Septem
+ bre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, d
+ isponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:47792615-57f0-52cd-b3d0-7b8cd56d1061@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:3\,99 € — reMarkable
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09.\nDate prévisionnelle : 02/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:fac5d4c9-333f-52b1-bf87-886eb9c2ae6e@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:4\,65 € — Smovengo / Vélib’ [à confirmer]
+DESCRIPTION:Montant observé : 4\,65 €.\nType : Charge à confirmer.\nPai
+ ement carte du 02/09\, débité le 03/09. Peut correspondre à un abonneme
+ nt ou à une consommation à l’usage. Les répétitions mensuelles sont 
+ de simples rappels de vérification\, pas des échéances confirmées.\nDa
+ te prévisionnelle : 02/11/2026. Projection mensuelle à partir d’un seu
+ l mois de données \; date et montant futurs non garantis. Le débit banca
+ ire peut apparaître quelques jours après le paiement\, notamment autour 
+ des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opéra
+ tions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité lib
+ re : ne bloque pas l’emploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:72c948d6-dd9e-581a-b171-9a94d149b89f@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:9\,93 € — Assurance du prêt Crédit Agricole
+DESCRIPTION:Montant observé : 9\,93 €.\nType : Assurance.\nRèglement du
+  03/09 : ASSU. CAAE PRET PERSONNEL 09/26.\nDate prévisionnelle : 03/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Assurance
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:1d2bb3e2-e3b4-5281-99c5-3b5ca13b3dc8@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:31\,32 € — Klarna — SNCF
+DESCRIPTION:Montant observé : 31\,32 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 04/09\, débité le 07/09.\nDate prévisionnel
+ le : 04/11/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:ee7ac772-c4aa-50a2-8147-ab8e398f1429@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:11\,28 € — Crédit Agricole — intérêts du prêt
+DESCRIPTION:Montant observé : 11\,28 €.\nType : Intérêts du prêt.\nRe
+ mboursement observé le 05/09\, libellé INTERETS. Ce montant représente 
+ uniquement les intérêts observés\, pas une mensualité complète capita
+ l et intérêts. Il peut varier.\nDate prévisionnelle : 05/11/2026. Proje
+ ction mensuelle à partir d’un seul mois de données \; date et montant 
+ futurs non garantis. Le débit bancaire peut apparaître quelques jours ap
+ rès le paiement\, notamment autour des week-ends et jours fériés.\nSour
+ ce : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJo
+ urnée entière\, disponibilité libre : ne bloque pas l’emploi du temps
+ .
+CATEGORIES:Intérêts du prêt
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:744d5956-2f73-5a73-8293-a948f3575766@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:99\,75 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 99\,75 €.\nType : Paiement échelonné.\nP
+ aiement carte du 05/09\, débité le 07/09. Échéancier distinct des paie
+ ments PayPal de 75\,00 € et 42\,50 €.\nDate prévisionnelle : 05/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nNombre d’échéances restantes et date de fin inconnus. Les occurr
+ ences jusqu’en décembre sont des prévisions à supprimer si le finance
+ ment est terminé \; le rythme mensuel reste à vérifier.\nSource : Compt
+ es Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée ent
+ ière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a2ebbd1a-ec46-5576-831b-04f1cb832354@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:6\,00 € — IONOS
+DESCRIPTION:Montant observé : 6\,00 €.\nType : Abonnement probable.\nPai
+ ement carte du 10/09\, débité le 14/09. Périodicité à confirmer.\nDat
+ e prévisionnelle : 10/11/2026. Projection mensuelle à partir d’un seul
+  mois de données \; date et montant futurs non garantis. Le débit bancai
+ re peut apparaître quelques jours après le paiement\, notamment autour d
+ es week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opérat
+ ions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité libr
+ e : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:3e19478e-12ba-560d-8bdc-1413408ce2c4@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:3\,99 € — Google Play Apps [à confirmer]
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Charge à confirmer.\nPai
+ ement carte du 11/09\, débité le 14/09. Peut être un achat ponctuel ou 
+ un abonnement. Les répétitions mensuelles sont de simples rappels de vé
+ rification\, pas des échéances confirmées.\nDate prévisionnelle : 11/1
+ 1/2026. Projection mensuelle à partir d’un seul mois de données \; dat
+ e et montant futurs non garantis. Le débit bancaire peut apparaître quel
+ ques jours après le paiement\, notamment autour des week-ends et jours f
+ ériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 2
+ 8/09/2026.\nJournée entière\, disponibilité libre : ne bloque pas l’e
+ mploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:be5798ee-b958-5bb2-9ae9-652b5344c9ba@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:6\,99 € — Amazon Prime
+DESCRIPTION:Montant observé : 6\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:193753fc-930f-5c37-8428-834236b3a2e1@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:5\,99 € — Uber One
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:ce612787-3bd4-5bfe-b767-b161a6cd0fdd@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:5\,99 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 13/09\, débité le 15/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 13/11/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:2131b7c6-2353-5417-88ab-efb360eaf4de@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:250\,64 € — CROUS — logement [à confirmer]
+DESCRIPTION:Montant observé : 250\,64 €.\nType : Charge à confirmer.\nP
+ aiement carte du 13/09\, débité le 14/09. Loyer probablement mensuel\, m
+ ais aucune date de prélèvement automatique n’est démontrée. Événem
+ ent servant de repère budgétaire.\nDate prévisionnelle : 13/11/2026. Pr
+ ojection mensuelle à partir d’un seul mois de données \; date et monta
+ nt futurs non garantis. Le débit bancaire peut apparaître quelques jours
+  après le paiement\, notamment autour des week-ends et jours fériés.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:8af79ff3-f77b-5d72-995a-a8a73d41af31@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:55\,83 € — Bouygues Telecom — ligne …626
+DESCRIPTION:Montant observé : 55\,83 €.\nType : Télécommunications.\nP
+ rélèvement observé le 14/09 pour la ligne finissant par 626. Montant su
+ sceptible de varier selon la facture.\nDate prévisionnelle : 14/11/2026. 
+ Projection mensuelle à partir d’un seul mois de données \; date et mon
+ tant futurs non garantis. Le débit bancaire peut apparaître quelques jou
+ rs après le paiement\, notamment autour des week-ends et jours fériés.\
+ nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026
+ .\nJournée entière\, disponibilité libre : ne bloque pas l’emploi du 
+ temps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:0d7177d7-9d19-5aa0-ab6c-eb1790bdface@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:3\,99 € — Nintendo
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement présumé.\nPa
+ iement carte du 15/09\, débité le 16/09. Classé en abonnement dans le f
+ ichier \; nature exacte et périodicité à confirmer.\nDate prévisionnel
+ le : 15/11/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/
+ 2026 au 28/09/2026.\nJournée entière\, disponibilité libre : ne bloque 
+ pas l’emploi du temps.
+CATEGORIES:Abonnement présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:089dd4bb-3c2b-5bd4-ba2a-012b60df7e97@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:3\,99 € — Bouygues Telecom — ligne …881
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Télécommunications.\nPr
+ élèvement observé le 18/09 pour la ligne finissant par 881. Montant sus
+ ceptible de varier selon la facture.\nDate prévisionnelle : 18/11/2026. P
+ rojection mensuelle à partir d’un seul mois de données \; date et mont
+ ant futurs non garantis. Le débit bancaire peut apparaître quelques jour
+ s après le paiement\, notamment autour des week-ends et jours fériés.\n
+ Source : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.
+ \nJournée entière\, disponibilité libre : ne bloque pas l’emploi du t
+ emps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f071ad8d-5b34-5509-b890-6cea9186196b@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:4\,99 € — Klarna member
+DESCRIPTION:Montant observé : 4\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 20/09\, débité le 21/09. Le libellé « member » suggèr
+ e un abonnement\, malgré la catégorie Prêt / 4X du fichier. À confirme
+ r.\nDate prévisionnelle : 20/11/2026. Projection mensuelle à partir d’
+ un seul mois de données \; date et montant futurs non garantis. Le débit
+  bancaire peut apparaître quelques jours après le paiement\, notamment a
+ utour des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, 
+ opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:5b6327b5-f2ac-55c2-9721-8cd92d097fe1@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:3\,00 € — Crédit Agricole — Offre Essentiel
+DESCRIPTION:Montant observé : 3\,00 €.\nType : Frais bancaires.\nCotisat
+ ion observée le 22/09.\nDate prévisionnelle : 22/11/2026. Projection men
+ suelle à partir d’un seul mois de données \; date et montant futurs no
+ n garantis. Le débit bancaire peut apparaître quelques jours après le p
+ aiement\, notamment autour des week-ends et jours fériés.\nSource : Comp
+ tes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée en
+ tière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Frais bancaires
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f13a8738-a449-5876-8f7a-ac5858b978dc@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:2\,09 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 2\,09 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 22/09\, débité le 23/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 22/11/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:755d5025-02b8-5d3e-aed0-b8c1e323083f@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:24\,99 € — Basic-Fit
+DESCRIPTION:Montant observé : 24\,99 €.\nType : abonnement Basic-Fit.\nP
+ rélèvement observé le 04/09/2026 \; période indiquée dans le libellé
+  : 04/09/2026 au 01/10/2026. Le calendrier suppose un renouvellement tous 
+ les 28 jours\, à confirmer dans le contrat. Il y a donc deux échéances 
+ prévues en octobre\, le 2 et le 30\, puis le 27 novembre et le 25 décemb
+ re. Le débit réel peut être décalé par les jours non ouvrés.\nSource
+  : Comptes Septembre.xlsx\, opération Basic-Fit du 04/09/2026.\nJournée 
+ entière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement — tous les 28 jours
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:3c010e12-2981-5e36-b301-a6f69847d543@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:33\,33 € — Floa
+DESCRIPTION:Montant observé : 33\,33 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 28/08\, débité le 31/08.\nDate prévisionnel
+ le : 28/11/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f14818f6-9789-541f-a919-d152490f0c24@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:2\,99 € — Discord Nitro Basic
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 29/08\, débité le 31/08.\nDate prévisionnelle : 29/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:630282a8-074d-53a7-a079-1d94b128b3ed@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:75\,00 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 75\,00 €.\nType : Paiement échelonné.\nP
+ aiement carte du 29/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 29/11/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:3de7bd6b-5f66-5a14-a824-5b7f390e9c2c@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:11\,99 € — Boulanger AppleCare
+DESCRIPTION:Montant observé : 11\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/11/2
+ 026. Projection mensuelle à partir d’un seul mois de données \; date e
+ t montant futurs non garantis. Le débit bancaire peut apparaître quelque
+ s jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:cc4f1d5e-eff7-5ad3-bc51-7779f0241868@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:7\,99 € — YouTube Premium
+DESCRIPTION:Montant observé : 7\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/11/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:027ffc50-f649-50cd-9159-4a771eda3a66@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:10\,99 € — Apple — autre service à identifier
+DESCRIPTION:Montant observé : 10\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 31/08\, débité le 01/09. Placé au dernier jour du mois 
+ lorsque le 31 n’existe pas. Service exact et périodicité à confirmer.
+ \nDate prévisionnelle : 30/11/2026. Projection mensuelle à partir d’un
+  seul mois de données \; date et montant futurs non garantis. Le débit b
+ ancaire peut apparaître quelques jours après le paiement\, notamment aut
+ our des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, op
+ érations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité
+  libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:99ed80b3-2d91-5144-a436-ad35430bf9bf@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:42\,50 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 42\,50 €.\nType : Paiement échelonné.\nP
+ aiement carte du 30/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 30/11/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:dcfaa098-3a48-5323-a9da-551505a9dda0@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:88\,91 € — Cofidis — Amazon
+DESCRIPTION:Montant observé : 88\,91 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 01/09\, débité le 03/09.\nDate prévisionnel
+ le : 01/12/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:924093c4-0caf-50c3-8ac6-dc710625ab9e@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:2\,99 € — Apple — service à identifier
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09. Service exact et périodicité 
+ à confirmer.\nDate prévisionnelle : 02/12/2026. Projection mensuelle à 
+ partir d’un seul mois de données \; date et montant futurs non garantis
+ . Le débit bancaire peut apparaître quelques jours après le paiement\, 
+ notamment autour des week-ends et jours fériés.\nSource : Comptes Septem
+ bre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, d
+ isponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:5fab7176-8129-5b98-9720-1a4888566d51@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:3\,99 € — reMarkable
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 02/09\, débité le 03/09.\nDate prévisionnelle : 02/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:ce5b4a34-7656-50ab-b412-18ab476b2330@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:4\,65 € — Smovengo / Vélib’ [à confirmer]
+DESCRIPTION:Montant observé : 4\,65 €.\nType : Charge à confirmer.\nPai
+ ement carte du 02/09\, débité le 03/09. Peut correspondre à un abonneme
+ nt ou à une consommation à l’usage. Les répétitions mensuelles sont 
+ de simples rappels de vérification\, pas des échéances confirmées.\nDa
+ te prévisionnelle : 02/12/2026. Projection mensuelle à partir d’un seu
+ l mois de données \; date et montant futurs non garantis. Le débit banca
+ ire peut apparaître quelques jours après le paiement\, notamment autour 
+ des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opéra
+ tions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité lib
+ re : ne bloque pas l’emploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:e207ac04-43c9-597b-9f21-602126ac6545@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:9\,93 € — Assurance du prêt Crédit Agricole
+DESCRIPTION:Montant observé : 9\,93 €.\nType : Assurance.\nRèglement du
+  03/09 : ASSU. CAAE PRET PERSONNEL 09/26.\nDate prévisionnelle : 03/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Assurance
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:e8e00cbf-679b-59ec-9956-1bd883a9dc4f@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:31\,32 € — Klarna — SNCF
+DESCRIPTION:Montant observé : 31\,32 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 04/09\, débité le 07/09.\nDate prévisionnel
+ le : 04/12/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:fb0646d8-19bb-584d-a14c-de507663afed@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:11\,28 € — Crédit Agricole — intérêts du prêt
+DESCRIPTION:Montant observé : 11\,28 €.\nType : Intérêts du prêt.\nRe
+ mboursement observé le 05/09\, libellé INTERETS. Ce montant représente 
+ uniquement les intérêts observés\, pas une mensualité complète capita
+ l et intérêts. Il peut varier.\nDate prévisionnelle : 05/12/2026. Proje
+ ction mensuelle à partir d’un seul mois de données \; date et montant 
+ futurs non garantis. Le débit bancaire peut apparaître quelques jours ap
+ rès le paiement\, notamment autour des week-ends et jours fériés.\nSour
+ ce : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJo
+ urnée entière\, disponibilité libre : ne bloque pas l’emploi du temps
+ .
+CATEGORIES:Intérêts du prêt
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:4542c75b-aa10-56c9-a8ce-851cf8dacd6b@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:99\,75 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 99\,75 €.\nType : Paiement échelonné.\nP
+ aiement carte du 05/09\, débité le 07/09. Échéancier distinct des paie
+ ments PayPal de 75\,00 € et 42\,50 €.\nDate prévisionnelle : 05/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nNombre d’échéances restantes et date de fin inconnus. Les occurr
+ ences jusqu’en décembre sont des prévisions à supprimer si le finance
+ ment est terminé \; le rythme mensuel reste à vérifier.\nSource : Compt
+ es Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée ent
+ ière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:b2d083a4-44da-5c86-8e57-42f5a5a7b70f@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:6\,00 € — IONOS
+DESCRIPTION:Montant observé : 6\,00 €.\nType : Abonnement probable.\nPai
+ ement carte du 10/09\, débité le 14/09. Périodicité à confirmer.\nDat
+ e prévisionnelle : 10/12/2026. Projection mensuelle à partir d’un seul
+  mois de données \; date et montant futurs non garantis. Le débit bancai
+ re peut apparaître quelques jours après le paiement\, notamment autour d
+ es week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, opérat
+ ions du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité libr
+ e : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:83dd10e5-bb29-5c36-919c-3600a6496933@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:3\,99 € — Google Play Apps [à confirmer]
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Charge à confirmer.\nPai
+ ement carte du 11/09\, débité le 14/09. Peut être un achat ponctuel ou 
+ un abonnement. Les répétitions mensuelles sont de simples rappels de vé
+ rification\, pas des échéances confirmées.\nDate prévisionnelle : 11/1
+ 2/2026. Projection mensuelle à partir d’un seul mois de données \; dat
+ e et montant futurs non garantis. Le débit bancaire peut apparaître quel
+ ques jours après le paiement\, notamment autour des week-ends et jours f
+ ériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 2
+ 8/09/2026.\nJournée entière\, disponibilité libre : ne bloque pas l’e
+ mploi du temps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:3843fbc1-2bd3-5dce-a883-d0852426d7bf@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:6\,99 € — Amazon Prime
+DESCRIPTION:Montant observé : 6\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:f30cd8c0-0ca6-5aac-8fe2-5ef0ab667307@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:5\,99 € — Uber One
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 12/09\, débité le 14/09.\nDate prévisionnelle : 12/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a43ec5a7-35ae-589e-a2c3-5711d6c07568@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:5\,99 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 5\,99 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 13/09\, débité le 15/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 13/12/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:845a86f5-ce21-594d-a40f-1087497289cb@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:250\,64 € — CROUS — logement [à confirmer]
+DESCRIPTION:Montant observé : 250\,64 €.\nType : Charge à confirmer.\nP
+ aiement carte du 13/09\, débité le 14/09. Loyer probablement mensuel\, m
+ ais aucune date de prélèvement automatique n’est démontrée. Événem
+ ent servant de repère budgétaire.\nDate prévisionnelle : 13/12/2026. Pr
+ ojection mensuelle à partir d’un seul mois de données \; date et monta
+ nt futurs non garantis. Le débit bancaire peut apparaître quelques jours
+  après le paiement\, notamment autour des week-ends et jours fériés.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Charge à confirmer
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:d113b60d-d206-57a5-aef3-4051c6b4ff65@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:55\,83 € — Bouygues Telecom — ligne …626
+DESCRIPTION:Montant observé : 55\,83 €.\nType : Télécommunications.\nP
+ rélèvement observé le 14/09 pour la ligne finissant par 626. Montant su
+ sceptible de varier selon la facture.\nDate prévisionnelle : 14/12/2026. 
+ Projection mensuelle à partir d’un seul mois de données \; date et mon
+ tant futurs non garantis. Le débit bancaire peut apparaître quelques jou
+ rs après le paiement\, notamment autour des week-ends et jours fériés.\
+ nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026
+ .\nJournée entière\, disponibilité libre : ne bloque pas l’emploi du 
+ temps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:c8c5287b-2a16-5e47-96cb-9e993d93c497@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:3\,99 € — Nintendo
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Abonnement présumé.\nPa
+ iement carte du 15/09\, débité le 16/09. Classé en abonnement dans le f
+ ichier \; nature exacte et périodicité à confirmer.\nDate prévisionnel
+ le : 15/12/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/
+ 2026 au 28/09/2026.\nJournée entière\, disponibilité libre : ne bloque 
+ pas l’emploi du temps.
+CATEGORIES:Abonnement présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:0831b7fe-b113-5a47-938e-c23184fe6a1e@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:3\,99 € — Bouygues Telecom — ligne …881
+DESCRIPTION:Montant observé : 3\,99 €.\nType : Télécommunications.\nPr
+ élèvement observé le 18/09 pour la ligne finissant par 881. Montant sus
+ ceptible de varier selon la facture.\nDate prévisionnelle : 18/12/2026. P
+ rojection mensuelle à partir d’un seul mois de données \; date et mont
+ ant futurs non garantis. Le débit bancaire peut apparaître quelques jour
+ s après le paiement\, notamment autour des week-ends et jours fériés.\n
+ Source : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.
+ \nJournée entière\, disponibilité libre : ne bloque pas l’emploi du t
+ emps.
+CATEGORIES:Télécommunications
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:18c30f80-5056-5a39-adc8-a0d2ce42edac@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:4\,99 € — Klarna member
+DESCRIPTION:Montant observé : 4\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 20/09\, débité le 21/09. Le libellé « member » suggèr
+ e un abonnement\, malgré la catégorie Prêt / 4X du fichier. À confirme
+ r.\nDate prévisionnelle : 20/12/2026. Projection mensuelle à partir d’
+ un seul mois de données \; date et montant futurs non garantis. Le débit
+  bancaire peut apparaître quelques jours après le paiement\, notamment a
+ utour des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, 
+ opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:0500d685-8a74-5e22-bf25-786a012c8cdd@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:3\,00 € — Crédit Agricole — Offre Essentiel
+DESCRIPTION:Montant observé : 3\,00 €.\nType : Frais bancaires.\nCotisat
+ ion observée le 22/09.\nDate prévisionnelle : 22/12/2026. Projection men
+ suelle à partir d’un seul mois de données \; date et montant futurs no
+ n garantis. Le débit bancaire peut apparaître quelques jours après le p
+ aiement\, notamment autour des week-ends et jours fériés.\nSource : Comp
+ tes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée en
+ tière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Frais bancaires
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:d018f692-3898-5ed3-923c-636445e4858a@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:2\,09 € — Klarna — paiement à identifier
+DESCRIPTION:Montant observé : 2\,09 €.\nType : Paiement échelonné pré
+ sumé.\nPaiement carte du 22/09\, débité le 23/09. Objet du paiement et 
+ périodicité non identifiés.\nDate prévisionnelle : 22/12/2026. Project
+ ion mensuelle à partir d’un seul mois de données \; date et montant fu
+ turs non garantis. Le débit bancaire peut apparaître quelques jours apr
+ ès le paiement\, notamment autour des week-ends et jours fériés.\nNombr
+ e d’échéances restantes et date de fin inconnus. Les occurrences jusqu
+ ’en décembre sont des prévisions à supprimer si le financement est te
+ rminé \; le rythme mensuel reste à vérifier.\nSource : Comptes Septembr
+ e.xlsx\, opérations du 28/08/2026 au 28/09/2026.\nJournée entière\, dis
+ ponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:dc5ab2e5-957c-5747-9ae4-bbdd3beffc26@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:24\,99 € — Basic-Fit
+DESCRIPTION:Montant observé : 24\,99 €.\nType : abonnement Basic-Fit.\nP
+ rélèvement observé le 04/09/2026 \; période indiquée dans le libellé
+  : 04/09/2026 au 01/10/2026. Le calendrier suppose un renouvellement tous 
+ les 28 jours\, à confirmer dans le contrat. Il y a donc deux échéances 
+ prévues en octobre\, le 2 et le 30\, puis le 27 novembre et le 25 décemb
+ re. Le débit réel peut être décalé par les jours non ouvrés.\nSource
+  : Comptes Septembre.xlsx\, opération Basic-Fit du 04/09/2026.\nJournée 
+ entière\, disponibilité libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement — tous les 28 jours
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:6524df94-1728-5847-8df4-66e8ae8b5bdd@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:33\,33 € — Floa
+DESCRIPTION:Montant observé : 33\,33 €.\nType : Paiement échelonné pr
+ ésumé.\nPaiement carte du 28/08\, débité le 31/08.\nDate prévisionnel
+ le : 28/12/2026. Projection mensuelle à partir d’un seul mois de donné
+ es \; date et montant futurs non garantis. Le débit bancaire peut appara
+ ître quelques jours après le paiement\, notamment autour des week-ends e
+ t jours fériés.\nNombre d’échéances restantes et date de fin inconnu
+ s. Les occurrences jusqu’en décembre sont des prévisions à supprimer 
+ si le financement est terminé \; le rythme mensuel reste à vérifier.\nS
+ ource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09/2026.\
+ nJournée entière\, disponibilité libre : ne bloque pas l’emploi du te
+ mps.
+CATEGORIES:Paiement échelonné présumé
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:694b8827-87b6-50fa-86e2-eadbf67230a5@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:2\,99 € — Discord Nitro Basic
+DESCRIPTION:Montant observé : 2\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 29/08\, débité le 31/08.\nDate prévisionnelle : 29/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:cfb31005-4cd1-527a-ba17-af3391876f59@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:75\,00 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 75\,00 €.\nType : Paiement échelonné.\nP
+ aiement carte du 29/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 29/12/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:523e44f7-0997-55c0-9b30-1d7d90e69915@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:11\,99 € — Boulanger AppleCare
+DESCRIPTION:Montant observé : 11\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/12/2
+ 026. Projection mensuelle à partir d’un seul mois de données \; date e
+ t montant futurs non garantis. Le débit bancaire peut apparaître quelque
+ s jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a8f0f9a6-7e07-5f74-b1e5-3e2b4c911f1d@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:7\,99 € — YouTube Premium
+DESCRIPTION:Montant observé : 7\,99 €.\nType : Abonnement probable.\nPai
+ ement carte du 30/08\, débité le 31/08.\nDate prévisionnelle : 30/12/20
+ 26. Projection mensuelle à partir d’un seul mois de données \; date et
+  montant futurs non garantis. Le débit bancaire peut apparaître quelques
+  jours après le paiement\, notamment autour des week-ends et jours féri
+ és.\nSource : Comptes Septembre.xlsx\, opérations du 28/08/2026 au 28/09
+ /2026.\nJournée entière\, disponibilité libre : ne bloque pas l’emplo
+ i du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:bf6f4a24-0337-5417-bcea-5ffdcd96dfe5@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:42\,50 € — PayPal — paiement en 4 fois
+DESCRIPTION:Montant observé : 42\,50 €.\nType : Paiement échelonné.\nP
+ aiement carte du 30/08\, débité le 31/08. Échéancier distinct des autr
+ es paiements PayPal.\nDate prévisionnelle : 30/12/2026. Projection mensue
+ lle à partir d’un seul mois de données \; date et montant futurs non g
+ arantis. Le débit bancaire peut apparaître quelques jours après le paie
+ ment\, notamment autour des week-ends et jours fériés.\nNombre d’éch
+ éances restantes et date de fin inconnus. Les occurrences jusqu’en déc
+ embre sont des prévisions à supprimer si le financement est terminé \; 
+ le rythme mensuel reste à vérifier.\nSource : Comptes Septembre.xlsx\, o
+ pérations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilit
+ é libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Paiement échelonné
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:a0d684eb-1633-5e1f-bb68-a6257c6995e6@paiements.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:10\,99 € — Apple — autre service à identifier
+DESCRIPTION:Montant observé : 10\,99 €.\nType : Abonnement probable.\nPa
+ iement carte du 31/08\, débité le 01/09. Placé au dernier jour du mois 
+ lorsque le 31 n’existe pas. Service exact et périodicité à confirmer.
+ \nDate prévisionnelle : 31/12/2026. Projection mensuelle à partir d’un
+  seul mois de données \; date et montant futurs non garantis. Le débit b
+ ancaire peut apparaître quelques jours après le paiement\, notamment aut
+ our des week-ends et jours fériés.\nSource : Comptes Septembre.xlsx\, op
+ érations du 28/08/2026 au 28/09/2026.\nJournée entière\, disponibilité
+  libre : ne bloque pas l’emploi du temps.
+CATEGORIES:Abonnement probable
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR
